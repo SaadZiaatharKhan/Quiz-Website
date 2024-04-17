@@ -1,0 +1,253 @@
+.top-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;    
+}
+
+.image-and-logo{
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: auto;
+    width: 8vx;
+    justify-content: space-between;
+    padding: 2px;
+}
+
+.top-logo-image{
+    height: 8vh;
+    width: 5vw;
+}
+
+.navbar{
+    display: flex;
+    background-color: black;
+    position: sticky;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.other-nav-text{
+    display: flex;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    height: auto;
+    width: 92vw;
+}
+
+.flexing-for-pro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Ensure the video is behind other content */
+}
+
+video {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.cutbox{
+    display: flex;
+    position: relative;
+    color: white;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+
+.about{
+    position: relative;
+    height: 10px;
+    width: 264px;
+    right: -31px;
+    opacity: 0;
+}
+
+.members{
+    position: relative;
+    height: 10px;
+    width: 264px;
+    right: -83px;
+    opacity: 0;
+}
+
+.introduction{
+    position: relative;
+    height: 10px;
+    width: 264px;
+    right: -30px;
+    opacity: 0;
+}
+
+.token-of-app{
+    position: relative;
+    height: 10px;
+    width: 264px;
+    right: -50px;
+    opacity: 0;
+}
+
+.just-for-lefting{
+    left: 219px;
+    top: -82px;
+    position: relative;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.typing-animation{
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.typing-animation h4 {
+    color: white;
+    font-size: 100px;
+    font-family: "Kode Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    overflow: hidden; /* Ensures text doesn't overflow */
+    white-space: nowrap; /* Ensures text stays in one line */
+    animation: typing 5s steps(28, end) infinite; /* Repeat the animation infinitely */
+}
+
+.typing-animation h4::after {
+    content: ' '; /* Add space at the end of the typing animation */
+    animation: blinking-cursor 2s step-end infinite; /* Add blinking cursor animation */
+}
+
+.typing-animation h1 {
+    color: white;
+    font-size: 100px;
+    font-family: "Kode Mono", monospace;
+    font-weight: 1200;
+    font-style: normal;
+    overflow: hidden; /* Ensures text doesn't overflow */
+    white-space: nowrap; /* Ensures text stays in one line */
+    animation: typing 5s steps(28, end) infinite; /* Repeat the animation infinitely */
+}
+
+.typing-animation h1::after {
+    content: ' '; /* Add space at the end of the typing animation */
+    animation: blinking-cursor 2s step-end infinite; /* Add blinking cursor animation */
+}
+
+@keyframes blinking-cursor {
+    from, to { border-right: 2px solid transparent; }
+    50% { border-right: 2px solid black; }
+}
+
+.bouncing-arrow span{
+    height: 7px;
+    width: 7px;
+    color: whitesmoke;
+    bottom: 81px;
+    position: relative;
+    font-size: 60px;
+    animation: up-down-ani 1s ease-in-out 0.5s infinite alternate-reverse;
+}
+
+@keyframes up-down-ani{
+    from{
+    }
+    to{
+        transform: translateY(20px);
+    }
+}
+
+.sec-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;    
+}
+
+.sec-container h1{
+    color: whitesmoke;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 100px;
+}
+
+.subject-boxes{
+    display: flex;
+    height: 700px;
+    width: 1600px;
+    border: 2px solid black;
+    background-color: rgba(132, 128, 128,0.2);
+    /* opacity: 0.2; */
+    position: relative;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px;
+    animation: moveLeftRight 10s infinite;
+    perspective: 1000px;
+}
+
+@keyframes moveLeftRight {
+    0%, 100% {
+      left: calc(-260px);
+    }
+    50% {
+      left: calc(100% - 900px);
+    }
+  }
+
+.common-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    margin: 15px;
+    color: white;
+    height: 400px ;
+    width: 400px;
+    border: 7px solid grey;
+    border-radius: 8px;
+    position: relative;
+    background-color: rgba(252, 211, 75,0.9);
+}
+
+.common-box h3{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+    font-size: 30px;
+
+}
+
+.common-box button{
+    color: black;
+    background-color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: medium;
+}
