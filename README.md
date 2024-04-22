@@ -1,4 +1,4 @@
-# Quiz-Website
+# Quiz Website
 
 This is a short quiz website which consists of ten questions of of five subjects - Physics, Chemistry, History, Civics, Geology- in Indian Context. The user can select options and at the end see the result. This interactive website has been created using HTML, CSS, Js and NodeJs. 
 
